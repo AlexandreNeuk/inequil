@@ -7,8 +7,8 @@ const sql = require('mssql')
 var options = {
   port: 11718,
   clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
-  username: 'fgwuwgpw',
-  password: 'ESQXpO-H7-1y',
+  username: '',
+  password: '',
 }
 
 var mqtt_url = process.env.CLOUDMQTT_URL || 'mqtt://m14.cloudmqtt.com';
@@ -77,10 +77,10 @@ client.on('connect', function() {
 })
 
 const config = {
-  user: 'DB_A4925A_connector_admin',
-  password: 'HUdgf!@S45G',
-  server: 'sql5018.site4now.net', // You can use 'localhost\\instance' to connect to named instance
-  database: 'db_a4925a_connector',
+  user: '',
+  password: '',
+  server: '', // You can use 'localhost\\instance' to connect to named instance
+  database: '',
 }
 
 async function post_temp (val) {
